@@ -92,13 +92,6 @@ Some insights derived from the dashboard include:
 * **Semiurban property areas** show a higher number of approved loans.
 * There is a visible relationship between **applicant income and loan amount requested**.
 * Education and employment status also influence approval trends.
-
----
-
-## 🖼 Dashboard Preview
-
-![Loan Approval Dashboard](dashboard.png)
-
 ---
 
 ## 🛠 Tools & Technologies Used
