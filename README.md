@@ -97,7 +97,7 @@ Some insights derived from the dashboard include:
 
 ## 🖼 Dashboard Preview
 
-![Loan Approval Dashboard](loandashboard.png)
+![Loan Approval Dashboard](loan dashboard.png)
 
 ---
 
