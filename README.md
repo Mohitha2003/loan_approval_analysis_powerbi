@@ -1,122 +1,122 @@
 # loan_approval_analysis_powerbi
 Power BI dashboard analyzing loan approval patterns using demographic and financial data.
-# Loan Approval Analysis Dashboard (Power BI)
+# Loan Approval Analysis Dashboard
 
 ## 📊 Project Overview
 
-This project analyzes loan approval patterns using a Power BI dashboard.
-The goal is to understand the key factors that influence whether a loan application gets approved or rejected.
-
-The dashboard provides insights into applicant demographics, income distribution, credit history, and property areas to identify trends affecting loan approvals.
+This project presents an interactive **Power BI dashboard** that analyzes loan approval patterns based on applicant demographics, financial information, and credit history.
+The objective of the project is to identify key factors that influence whether a loan application is approved or rejected.
 
 ---
 
-## 📁 Dataset
+## 📁 Dataset Description
 
-The dataset contains information about loan applicants including:
+The dataset contains information about loan applicants and their loan status. Key columns include:
 
-* Gender
-* Marital Status
-* Dependents
-* Education
-* Self Employment
-* Applicant Income
-* Loan Amount
-* Credit History
-* Property Area
-* Loan Status (Approved / Rejected)
+* **Gender** – Applicant gender
+* **Married** – Marital status
+* **Dependents** – Number of dependents
+* **Education** – Graduate / Not Graduate
+* **Self Employed** – Employment status
+* **ApplicantIncome** – Applicant monthly income
+* **CoapplicantIncome** – Co-applicant income
+* **LoanAmount** – Loan amount requested
+* **Loan_Amount_Term** – Loan repayment term
+* **Credit_History** – Credit history (1 = good and good repyment history, 0 = bad or fresh applicant)
+* **Property_Area** – Urban / Semiurban / Rural
+* **Loan_Status** – Loan Approved (Y) or Rejected (N)
 
 ---
 
 ## 🧹 Data Cleaning & Transformation
 
-Data preprocessing was performed using **Power Query**.
+Data preprocessing was performed in **Power Query** before building the dashboard.
 
-Missing values were handled using statistical imputation techniques:
+Steps performed:
+* Identified some **null** values and removed them.
+* Identified **missing values/blanks** in the dataset
+* Replaced missing values using statistical techniques:
 
-* **Categorical columns** (Gender, Married, Dependents, etc.)
-
-  * Replaced missing values with the **Mode (most frequent value)**.
-
-* **Numeric columns** (Loan Amount, Applicant Income)
-
-  * Replaced missing values with the **Median** to reduce the influence of outliers.
-
-Additional transformations included:
-
-* Data type corrections
-* Removing inconsistencies
-* Preparing data for analysis
+  * **Categorical columns** → replaced with **Mode (most frequent value)**
+  * **Numeric columns** → replaced with **Median** to reduce the effect of outliers
+* Corrected **data types**
+* Removed inconsistencies and prepared the dataset for analysis
 
 ---
 
-## 📐 Data Modeling & Measures
+## 📐 Data Analysis & Measures
 
-DAX measures were created to calculate key metrics:
+Several **DAX measures** were created to calculate key metrics used in the dashboard.
 
-* **Total Applications**
+Key metrics include:
+
+* **Total Loan Applications**
 * **Approved Loans**
 * **Rejected Loans**
 * **Loan Approval Rate**
 
-Example KPI:
+Example calculation:
 
 Approval Rate = Approved Loans / Total Applications
 
 ---
 
-## 📈 Dashboard Features
+## 📊 Dashboard Features
 
-The dashboard includes:
+The Power BI dashboard provides insights through multiple visualizations:
 
-* KPI cards showing total applications and approval rate
-* Loan approval distribution by **education level**
-* Analysis of **credit history impact on loan approval**
-* Scatter plot showing relationship between **income and loan amount**
-* Approval analysis by **property area**
-* Demographic insights of loan applicants
+* **KPI Cards**
+
+  * Total Applications
+  * Approved Loans
+  * Rejected Loans
+  * Approval Rate
+
+* **Loan Approval by Education**
+
+* **Credit History Impact on Loan Approval**
+
+* **Income vs Loan Amount Scatter Plot**
+
+* **Loan Approval by Property Area**
+
+* **Applicant Demographic Analysis**
 
 ---
 
 ## 🔍 Key Insights
 
-* Loan applicants with **credit history = 1** have a significantly higher approval rate.
-* **Semiurban property areas** show higher loan approval counts.
-* Applicants with **higher incomes tend to request larger loan amounts**.
-* Credit history plays a **major role in loan approval decisions**.
+Some insights derived from the dashboard include:
+
+* Applicants with **good credit history** have a much higher chance of loan approval.
+* **Semiurban property areas** show a higher number of approved loans.
+* There is a visible relationship between **applicant income and loan amount requested**.
+* Education and employment status also influence approval trends.
 
 ---
 
 ## 🖼 Dashboard Preview
 
-![Dashboard](dashboard.png)
+![Loan Approval Dashboard](dashboard.png)
 
 ---
 
-## 🛠 Tools Used
+## 🛠 Tools & Technologies Used
 
 * **Power BI**
 * **Power Query**
 * **DAX**
 * **Data Visualization**
-* **Data Cleaning**
 
 ---
 
-## 📌 Project Purpose
+## 🎯 Project Objective
 
 This project demonstrates skills in:
 
 * Data cleaning and preprocessing
 * Power BI dashboard development
 * Data visualization
-* Business insight generation
+* Data-driven insight generation
 * DAX calculations
 
----
-
-## 🚀 Future Improvements
-
-* Add interactive slicers for deeper exploration
-* Perform additional statistical analysis
-* Include predictive modeling for loan approval
